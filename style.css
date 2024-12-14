@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* .navbar-section  */
 
 a {
   color: #fff;
@@ -25,10 +26,12 @@ a {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
+  /* using keyframes--show-contact for animation */
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.2s;
 }
 
+/* making keyframes-- show-contact for animation*/
 @keyframes show-content {
   100% {
     visibility: visible;
@@ -36,6 +39,7 @@ a {
   }
 }
 
+/* .navbar-section  */
 .navbar .logo {
   font-size: 30px;
   font-weight: 700;
@@ -56,11 +60,13 @@ a {
   transition: 0.5s;
 }
 
+/* navbar-hover  */
 .navbar ul li:hover a,
 .navbar ul li.active a {
   color: #7cf03d;
 }
 
+/* home-section */
 .home {
   display: flex;
   align-items: center;
@@ -90,10 +96,12 @@ a {
   display: inline-block;
   color: transparent;
   -webkit-text-stroke: .7px red;
+  /* using keyframes-- display-text for animation  */
   animation: display-text 16s linear infinite ;
   animation-delay: calc(-4s * var(--i));
 }
 
+/* making keyframes-- display-text for animation  */
 @keyframes display-text {
 
   25%,
@@ -102,6 +110,7 @@ a {
   }
 }
 
+/* home-section  */
 .home-info h2 span::before {
   content: attr(data-text);
   position: absolute;
@@ -110,9 +119,11 @@ a {
   color: #7cf03d;
   white-space: nowrap;
   overflow: hidden;
+  /* using keyframe-- fill-text  */
   animation: fill-text 4s linear infinite;
 }
 
+/* making-keyframe-- fill-text  */
 @keyframes fill-text {
 
   10%,
@@ -130,6 +141,8 @@ a {
   font-size: 16px;
   margin: 10px 0 25px;
 }
+
+/* btn-soical-section  */
 
 .home-info .btn-social {
   display: flex;
@@ -149,6 +162,7 @@ a {
   transition: 0.5s;
 }
 
+/* btn-social--hover section  */
 .btn:hover {
   background: transparent;
   color: #7cf03d;
@@ -176,6 +190,7 @@ a {
   box-shadow: 0 0 10px #7cf03d;
 }
 
+/* home-img-section  */
 .home-img .img-box {
   position: relative;
   width: 32vw;
@@ -196,6 +211,7 @@ a {
   height: 500px;
   background: conic-gradient(transparent, transparent, transparent, #7cf03d);
   transform: rotate(0deg);
+  /* using keyframe --rotate-border  */
   animation: rotate-border 10s linear infinite;
 }
 
@@ -203,6 +219,7 @@ a {
   animation-delay: -5s;
 }
 
+/* making keyframe --rotate-border  */
 @keyframes rotate-border{
   100%{
     transform: rotate(360deg);
@@ -231,7 +248,7 @@ a {
   mix-blend-mode: lighten;
 }
 
-
+/* bar-section  */
 .bars-animation {
   position: absolute;
   width: 100%;
@@ -246,10 +263,12 @@ a {
   height: 100%;
   background: #1f242d;
   transform: translateY(-100%);
+  /* using keyframes-- show-bars animation  */
   animation: show-bars .5s ease-in-out forwards;
   animation-delay: calc(.1s * var(--i));
 }
 
+/* making keyframes-- show-bars animation  */
 @keyframes show-bars {
   100% {
     transform: translateY(0%);
